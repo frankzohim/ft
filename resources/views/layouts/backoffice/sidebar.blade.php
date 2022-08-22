@@ -14,8 +14,8 @@
                     
                     <li><a class="sidebar-header" href="#"><i data-feather="box"></i> <span>Voyages</span><i class="fa fa-angle-right pull-right"></i></a>
                         <ul class="sidebar-submenu">
-                            <li><a href="#"><i class="fa fa-circle"></i>Liste Voyages</a></li>
-                            <li><a href="#"><i class="fa fa-circle"></i>Ajouter</a></li>
+                            <li><a href="{{ route('ride.index') }}"><i class="fa fa-circle"></i>Liste Voyages</a></li>
+                            <li><a href="{{ route('ride.create') }}"><i class="fa fa-circle"></i>Ajouter</a></li>
                          
                         </ul>
                     </li>

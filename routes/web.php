@@ -6,6 +6,7 @@ use App\Http\Controllers\PathController;
 use App\Http\Controllers\MakeController;
 use App\Http\Controllers\CarModelController;
 use App\Http\Controllers\CarController;
+use App\Http\Controllers\RideController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,6 +36,7 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
         'make' => MakeController::class,
         'carmodel' => CarModelController::class,
         'car' => CarController::class,
+        'ride' => RideController::class,
     ]);
 
 });
