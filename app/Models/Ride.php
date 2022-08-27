@@ -9,5 +9,5 @@ class Ride extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['_token'];
+    protected $guarded = ['_token'];
 }

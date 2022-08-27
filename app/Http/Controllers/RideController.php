@@ -17,7 +17,8 @@ class RideController extends Controller
      */
     public function index()
     {
-        //
+        $rides = Ride::all();
+        return view('ride.index', compact('rides'));
     }
 
     /**
@@ -41,7 +42,7 @@ class RideController extends Controller
     public function store(RideRequest $request)
     {
         $validatedData = $request->validated();
-        Ride::create($request->all());
+        Ride::create($request->except('_token'));
     }
 
     /**
