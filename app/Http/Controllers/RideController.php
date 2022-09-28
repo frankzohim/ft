@@ -53,7 +53,7 @@ class RideController extends Controller
      */
     public function show(Ride $ride)
     {
-        //
+        return $ride;
     }
 
     /**

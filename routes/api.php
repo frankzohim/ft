@@ -2,7 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RideController;
 use App\Http\Controllers\Auth\RegisteredUserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +24,9 @@ Route::middleware('auth:api')->prefix('v1')->group(function(){
     });
 
     Route::post('edit/profile', [RegisteredUserController::class, 'editProfile']);
+    //Route::get('ride/{ride}', [RideController::class,'show']);
+
+    Route::get('ride/{ride}', [RideController::class, 'show']);
 
 });
 

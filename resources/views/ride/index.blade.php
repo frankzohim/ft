@@ -58,7 +58,7 @@
                     
                     <div class="card-body vendor-table">
                     <div class="btn-popup pull-right">
-                        <a href='{{route("ride.create")}}'><button type="button" class="btn btn-primary">Ajouter un produit</button></a>
+                        <a href='{{route("ride.create")}}'><button type="button" class="btn btn-primary">Ajouter un voyage</button></a>
                     </div>
                         <table class="display" id="basic-1">
                             <thead>
@@ -80,13 +80,13 @@
                                     <td>
                                         <div class="d-flex vendor-list">
                                             
-                                            <span>{{$ride->path_id}}</span>
+                                            <span>{{$ride->path->leaving}}</span>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="d-flex vendor-list">
                                             
-                                            <span>{{$ride->path_id}}</span>
+                                            <span>{{$ride->path->arrival}}</span>
                                         </div>
                                     </td>
                                     <td>
